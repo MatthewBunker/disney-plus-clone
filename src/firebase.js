@@ -17,5 +17,27 @@ const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 const storage = firebase.storage();
 
+// var gcloud = require('@google-cloud/storage')({
+//   projectId: "disney-plus-clone-c1f5d"
+// });
+// var storage = gcloud.storage();
+
+
+// let data = require('./disneyPlusMovieData.json');
+// data = JSON.parse(data);
+
+// data.forEach(function(obj) {
+//   db.collection("Movies").add({
+//       backgroundImg: obj.backgroundImg,
+//       cardImg: obj.cardImg,
+//       description: obj.description,
+//       subTitle: obj.subTitle,
+//       title: obj.title,
+//       titleImg: obj.titleImg,
+//       type: obj.type
+//   });
+// });
+
+
 export { auth, provider, storage };
 export default db;

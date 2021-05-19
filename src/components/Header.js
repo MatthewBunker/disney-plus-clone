@@ -81,7 +81,7 @@ const Header = (props) => {
                         </a>
                     </Menu>
                     <SignOut>
-                        <userImg src={userPhoto} alt={userName} />
+                        <UserImg src={userPhoto} alt={userName} />
                         <DropDown>
                             <span onClick={handleAuth}>Sign Out</span>
                         </DropDown>
@@ -200,7 +200,7 @@ const Login = styled.a`
     }
 `;
 
-const userImg = styled.img`
+const UserImg = styled.img`
     height: 100%;
 `;
 
@@ -229,7 +229,7 @@ const SignOut = styled.div`
     align-items: center;
     justify-content: center;
 
-    ${userImg} {
+    ${UserImg} {
         border-radius: 50%;
         width: 100%;
         height: 100%;
